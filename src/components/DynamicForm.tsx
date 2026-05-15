@@ -92,7 +92,7 @@ export function DynamicForm({ fields, formTitle }: Props) {
 
   // ── Reset handler ─────────────────────────────────────────────────────────
   const handleReset = useCallback(() => {
-    // DEBUG — open browser console to see this
+
     const storeState = useFormStore.getState();
     console.log("fields in store:", storeState.fields.length);
     console.log("values before reset:", storeState.values);
